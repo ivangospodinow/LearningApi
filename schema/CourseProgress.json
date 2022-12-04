@@ -1,0 +1,36 @@
+{
+    "type": "object",
+    "properties": {
+        "courseDuration": {
+            "type": "integer",
+            "required": true,
+            "minimum": 1,
+            "description": "Course duration"
+        },
+        "currentProgress": {
+            "type": "integer",
+            "required": true,
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Current progress percent"
+        },
+        "assignmentDate": {
+            "required": true,
+            "type": "string",
+            "format": "datetime",
+            "description": "Assignment date"
+        },
+        "dueDate": {
+            "required": true,
+            "type": "string",
+            "format": "datetime",
+            "description": "Due date"
+        },
+        "currentDate": {
+            "optional": true,
+            "type": "string",
+            "format": "datetime",
+            "description": "Current date"
+        }
+    }
+}
